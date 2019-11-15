@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta</title>
+  </head>
+  <body>
+<p>Encuesta de Satisfacción:</p>
+
+<form method="post" action="miservidor.php">
+     <div>
+       <label for=”nombre”>Nombre:</label>
+       <input id=”nombre” type=”text”>
+     </div>
+     <div>
+       <label for=”ape1”>Primer apellido:</label>
+       <input id=”ape1” type=”text”>
+     </div>
+     <div>
+       <label for=”ape2”>Código Postal:</label>
+       <input id=”ape2” type=”text”>
+     </div>
+     <div>
+       <label for=”nivel”>Nivel de satisfaccióname:</label>       
+       <select id=”Nivel”>
+         <option value=”1”>1</option>
+         <option value=”2”>2</option>
+         <option value=”3”>3</option>
+         <option value=”4”>4</option>
+         <option value=”5”>5</option>
+       </select>
+   </div>
+	 <div>
+       <label for=”mail”>Mail:</label>
+       <input id=”mail” type=”text”>
+     </div>
+      <div>
+     <label for=”comentariospositivos”>Comentario positivo:</label>
+     <textarea id=”comentario”></textarea>
+   </div>
+    <div>
+     <label for=”comentariosnegativos”>Comentario negativos:</label>
+     <textarea id=”comentario”></textarea>
+   </div>
+   <input type=”submit” value=”Enviar”>
+</form>
